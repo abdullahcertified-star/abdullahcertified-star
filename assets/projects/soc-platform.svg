@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="socBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070C18" />
+      <stop offset="100%" stop-color="#0A1426" />
+    </linearGradient>
+    <linearGradient id="socGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF9D" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+    <pattern id="socDot" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#00FF9D" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes globeSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes pulseThreat { 0%, 100% { r: 3; opacity: 1; } 50% { r: 6; opacity: 0.4; } }
+    .card-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace; }
+    .threat-dot { animation: pulseThreat 1.8s infinite ease-in-out; }
+  </style>
+
+  <!-- Background Base -->
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#socBg)" stroke="#1F2E4A" stroke-width="1.2" />
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#socDot)" pointer-events="none" />
+
+  <!-- Corner Brackets -->
+  <path d="M 6 22 L 6 6 L 22 6" fill="none" stroke="#00FF9D" stroke-width="2" />
+  <path d="M 414 22 L 414 6 L 398 6" fill="none" stroke="#00E5FF" stroke-width="2" />
+
+  <!-- Visual Pic: 3D Attack Globe & Radar (Right Side) -->
+  <g transform="translate(345, 95)">
+    <!-- Globe wireframe rings -->
+    <circle cx="0" cy="0" r="38" fill="#061224" stroke="#16325C" stroke-width="1" />
+    <ellipse cx="0" cy="0" rx="38" ry="14" fill="none" stroke="#00E5FF" stroke-width="0.8" stroke-opacity="0.6" />
+    <ellipse cx="0" cy="0" rx="14" ry="38" fill="none" stroke="#00E5FF" stroke-width="0.8" stroke-opacity="0.6" />
+    <line x1="-38" y1="0" x2="38" y2="0" stroke="#00FF9D" stroke-width="0.8" stroke-opacity="0.5" stroke-dasharray="2 2" />
+    <!-- Radar Sweep -->
+    <path d="M 0 0 L 26 -26 A 38 38 0 0 1 38 0 Z" fill="#00FF9D" fill-opacity="0.12" />
+    <!-- Threat blips -->
+    <circle cx="16" cy="-12" r="3" fill="#EF4444" class="threat-dot" />
+    <circle cx="-18" cy="10" r="2.5" fill="#00FF9D" />
+    <circle cx="8" cy="20" r="2" fill="#00E5FF" />
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF" />
+  </g>
+
+  <!-- Left Content Info -->
+  <g class="card-font">
+    <!-- Category & Lang Badge -->
+    <rect x="18" y="16" width="80" height="18" rx="3" fill="#042016" stroke="#00FF9D" stroke-width="0.8" />
+    <text x="58" y="29" fill="#00FF9D" font-size="9" font-weight="bold" text-anchor="middle">SOC &amp; IDS</text>
+
+    <rect x="104" y="16" width="55" height="18" rx="3" fill="#091A2E" stroke="#00E5FF" stroke-width="0.8" />
+    <text x="131" y="29" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">Python</text>
+
+    <!-- Title -->
+    <text x="18" y="58" fill="#F1F5F9" font-size="14" font-weight="bold" letter-spacing="0.3">autonomous-soc-platform</text>
+
+    <!-- Description Lines -->
+    <text x="18" y="82" fill="#94A3B8" font-size="11">Full-stack SOC &amp; IDS platform with autonomous</text>
+    <text x="18" y="99" fill="#94A3B8" font-size="11">AI threat triage (SOCO), 3D Three.js attack</text>
+    <text x="18" y="116" fill="#94A3B8" font-size="11">globe &amp; automated firewall response.</text>
+
+    <!-- Feature Tags -->
+    <rect x="18" y="134" width="62" height="18" rx="3" fill="#0E1E34" />
+    <text x="49" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">Three.js</text>
+
+    <rect x="86" y="134" width="68" height="18" rx="3" fill="#0E1E34" />
+    <text x="120" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">Packet Sniff</text>
+
+    <rect x="160" y="134" width="70" height="18" rx="3" fill="#0E1E34" />
+    <text x="195" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">Firewall API</text>
+
+    <!-- Footer Action -->
+    <line x1="18" y1="165" x2="402" y2="165" stroke="#16233B" stroke-width="1" />
+    <text x="18" y="182" fill="#00FF9D" font-size="10" font-weight="bold">Explore Repository ↗</text>
+    <text x="402" y="182" fill="#64748B" font-size="10" text-anchor="end">PUBLIC REPO</text>
+  </g>
+</svg>

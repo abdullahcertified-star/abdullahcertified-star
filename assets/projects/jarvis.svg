@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="jarvisCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C1A" />
+      <stop offset="100%" stop-color="#0F142A" />
+    </linearGradient>
+    <pattern id="jarvisDot" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#38BDF8" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes hudSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes wavePulse { 0%, 100% { height: 12px; } 50% { height: 26px; } }
+    .card-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace; }
+  </style>
+
+  <!-- Background Base -->
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#jarvisCardBg)" stroke="#1F2848" stroke-width="1.2" />
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#jarvisDot)" pointer-events="none" />
+
+  <!-- Corner Brackets -->
+  <path d="M 6 22 L 6 6 L 22 6" fill="none" stroke="#00E5FF" stroke-width="2" />
+  <path d="M 414 22 L 414 6 L 398 6" fill="none" stroke="#A855F7" stroke-width="2" />
+
+  <!-- Visual Pic: 3D Holographic Arc Reactor & Voice HUD (Right Side) -->
+  <g transform="translate(345, 95)">
+    <!-- Outer HUD ring -->
+    <circle cx="0" cy="0" r="38" fill="#0A1024" stroke="#1E2E5A" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#00E5FF" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.8" />
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="6 4" opacity="0.9" />
+    <circle cx="0" cy="0" r="12" fill="#081A38" stroke="#00E5FF" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="5" fill="#00E5FF">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <!-- Voice frequency wave bars -->
+    <line x1="-28" y1="0" x2="-28" y2="-12" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" />
+    <line x1="-28" y1="0" x2="-28" y2="12" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" />
+    <line x1="28" y1="0" x2="28" y2="-12" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" />
+    <line x1="28" y1="0" x2="28" y2="12" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Left Content Info -->
+  <g class="card-font">
+    <!-- Category & Lang Badge -->
+    <rect x="18" y="16" width="95" height="18" rx="3" fill="#081B34" stroke="#00E5FF" stroke-width="0.8" />
+    <text x="65" y="29" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">VOICE HUD &amp; AI</text>
+
+    <rect x="119" y="16" width="55" height="18" rx="3" fill="#091A2E" stroke="#00FF9D" stroke-width="0.8" />
+    <text x="146" y="29" fill="#00FF9D" font-size="9" font-weight="bold" text-anchor="middle">Python</text>
+
+    <!-- Title -->
+    <text x="18" y="58" fill="#F1F5F9" font-size="13.5" font-weight="bold" letter-spacing="0.3">JARVIS — Autonomous AI Desktop</text>
+
+    <!-- Description Lines -->
+    <text x="18" y="82" fill="#94A3B8" font-size="11">Ultra-fast voice assistant &amp; Windows 11 automation</text>
+    <text x="18" y="99" fill="#94A3B8" font-size="11">agent powered by Google Gemini, OpenWakeWord,</text>
+    <text x="18" y="116" fill="#94A3B8" font-size="11">Edge Neural TTS &amp; floating 3D WebGL HUD.</text>
+
+    <!-- Feature Tags -->
+    <rect x="18" y="134" width="76" height="18" rx="3" fill="#141C38" />
+    <text x="56" y="146" fill="#A855F7" font-size="9" text-anchor="middle">Google Gemini</text>
+
+    <rect x="100" y="134" width="65" height="18" rx="3" fill="#141C38" />
+    <text x="132" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">WebGL HUD</text>
+
+    <rect x="171" y="134" width="68" height="18" rx="3" fill="#141C38" />
+    <text x="205" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">Windows 11</text>
+
+    <!-- Footer Action -->
+    <line x1="18" y1="165" x2="402" y2="165" stroke="#16233B" stroke-width="1" />
+    <text x="18" y="182" fill="#00E5FF" font-size="10" font-weight="bold">Explore Repository ↗</text>
+    <text x="402" y="182" fill="#64748B" font-size="10" text-anchor="end">PUBLIC REPO</text>
+  </g>
+</svg>

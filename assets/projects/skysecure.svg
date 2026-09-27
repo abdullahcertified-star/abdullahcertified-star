@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060E1A" />
+      <stop offset="100%" stop-color="#091A2E" />
+    </linearGradient>
+    <pattern id="skyDot" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#38BDF8" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <style>
+    .card-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace; }
+  </style>
+
+  <!-- Background Base -->
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#skyBg)" stroke="#16385C" stroke-width="1.2" />
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#skyDot)" pointer-events="none" />
+
+  <!-- Corner Brackets -->
+  <path d="M 6 22 L 6 6 L 22 6" fill="none" stroke="#38BDF8" stroke-width="2" />
+  <path d="M 414 22 L 414 6 L 398 6" fill="none" stroke="#00FF9D" stroke-width="2" />
+
+  <!-- Visual Pic: Supersonic Aircraft & Auth Shield (Right Side) -->
+  <g transform="translate(345, 95)">
+    <circle cx="0" cy="0" r="38" fill="#081E38" stroke="#1B4474" stroke-width="1" />
+    <!-- Aircraft Wireframe -->
+    <path d="M 0 -22 L 4 -4 L 24 10 L 4 10 L 2 20 L 8 26 L 0 24 L -8 26 L -2 20 L -4 10 L -24 10 L -4 -4 Z" fill="#0E2F56" stroke="#38BDF8" stroke-width="1.2" />
+    <!-- Auth lock badge below -->
+    <circle cx="14" cy="14" r="9" fill="#042016" stroke="#00FF9D" stroke-width="1" />
+    <circle cx="14" cy="12" r="2.5" fill="#00FF9D" />
+    <rect x="12" y="14" width="4" height="4" rx="0.5" fill="#00FF9D" />
+  </g>
+
+  <!-- Left Content Info -->
+  <g class="card-font">
+    <!-- Category & Lang Badge -->
+    <rect x="18" y="16" width="90" height="18" rx="3" fill="#082648" stroke="#38BDF8" stroke-width="0.8" />
+    <text x="63" y="29" fill="#38BDF8" font-size="9" font-weight="bold" text-anchor="middle">RBAC SECURITY</text>
+
+    <rect x="114" y="16" width="48" height="18" rx="3" fill="#0D223E" stroke="#60A5FA" stroke-width="0.8" />
+    <text x="138" y="29" fill="#60A5FA" font-size="9" font-weight="bold" text-anchor="middle">C++</text>
+
+    <!-- Title -->
+    <text x="18" y="58" fill="#F1F5F9" font-size="13" font-weight="bold" letter-spacing="0.3">skysecure-airline-management</text>
+
+    <!-- Description Lines -->
+    <text x="18" y="82" fill="#94A3B8" font-size="11">Multi-role airline reservation system in C++ featuring</text>
+    <text x="18" y="99" fill="#94A3B8" font-size="11">salted password hashing, OTP verification, account</text>
+    <text x="18" y="116" fill="#94A3B8" font-size="11">lockout heuristics &amp; role-based access control.</text>
+
+    <!-- Feature Tags -->
+    <rect x="18" y="134" width="70" height="18" rx="3" fill="#0B2644" />
+    <text x="53" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">Salted Hash</text>
+
+    <rect x="94" y="134" width="60" height="18" rx="3" fill="#0B2644" />
+    <text x="124" y="146" fill="#00FF9D" font-size="9" text-anchor="middle">OTP Auth</text>
+
+    <rect x="160" y="134" width="58" height="18" rx="3" fill="#0B2644" />
+    <text x="189" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">RBAC Model</text>
+
+    <!-- Footer Action -->
+    <line x1="18" y1="165" x2="402" y2="165" stroke="#162E4A" stroke-width="1" />
+    <text x="18" y="182" fill="#38BDF8" font-size="10" font-weight="bold">Explore Repository ↗</text>
+    <text x="402" y="182" fill="#64748B" font-size="10" text-anchor="end">PUBLIC REPO</text>
+  </g>
+</svg>

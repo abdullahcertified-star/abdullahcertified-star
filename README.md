@@ -65,13 +65,46 @@ I engineer practical software to observe how threats operate at the wire and app
 
 ---
 
-### `> FEATURED_PROJECTS`
+### `> PINNED_PROJECTS`
 
-| Project | Domain | Architecture & Stack | Status |
-| :--- | :--- | :--- | :--- |
-| **[Real-Time SOC Monitoring & IDS](https://github.com/abdullahcertified-star)** | Security Telemetry | `Python` `Scapy` `Flask` `psutil` `JWT` `bcrypt` `MITRE ATT&CK`<br/>Promiscuous packet capture, threshold heuristics, and live alert dashboard. | `Active Dev` |
-| **[JARVIS — AI Desktop Automation](https://github.com/abdullahcertified-star)** | Autonomous Agents | `Python` `LangGraph` `LangChain` `n8n` `APIs` `Windows Internals`<br/>Multi-step reasoning graphs executing sandboxed OS actions and API workflows. | `Prototype` |
-| **[Kisan Dost — Agronomy AI](https://github.com/abdullahcertified-star)** | Applied Domain AI | `Python` `FastAPI` `LangChain` `RAG` `Vector DB` `Weather APIs`<br/>Localized crop advisory, pest diagnosis, and mandi market pricing support. | `Building` |
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/abdullahcertified-star/autonomous-soc-platform">
+        <img src="./assets/projects/soc-platform.svg" width="100%" alt="Autonomous SOC Platform" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/abdullahcertified-star/-JARVIS-Autonomous-AI-Desktop-Agent-Voice-HUD">
+        <img src="./assets/projects/jarvis.svg" width="100%" alt="JARVIS AI Voice HUD" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/abdullahcertified-star/kisan-dost">
+        <img src="./assets/projects/kisan-dost.svg" width="100%" alt="Kisan Dost AI" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/abdullahcertified-star/cyber-shield">
+        <img src="./assets/projects/cyber-shield.svg" width="100%" alt="Cyber Shield Password Toolkit" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/abdullahcertified-star/BurpSuite-Pro-2026-loader">
+        <img src="./assets/projects/burpsuite.svg" width="100%" alt="Burp Suite Pro 2026 Research Toolkit" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/abdullahcertified-star/skysecure-airline-management">
+        <img src="./assets/projects/skysecure.svg" width="100%" alt="SkySecure Airline Management System" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 

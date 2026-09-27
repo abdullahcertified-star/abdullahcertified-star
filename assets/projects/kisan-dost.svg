@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kisanBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06120E" />
+      <stop offset="100%" stop-color="#0A1E17" />
+    </linearGradient>
+    <pattern id="kisanDot" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#10B981" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <style>
+    .card-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace; }
+  </style>
+
+  <!-- Background Base -->
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#kisanBg)" stroke="#163C2E" stroke-width="1.2" />
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#kisanDot)" pointer-events="none" />
+
+  <!-- Corner Brackets -->
+  <path d="M 6 22 L 6 6 L 22 6" fill="none" stroke="#10B981" stroke-width="2" />
+  <path d="M 414 22 L 414 6 L 398 6" fill="none" stroke="#F59E0B" stroke-width="2" />
+
+  <!-- Visual Pic: Cyber Leaf & Agronomy Sensor Nodes (Right Side) -->
+  <g transform="translate(345, 95)">
+    <circle cx="0" cy="0" r="38" fill="#041F14" stroke="#134E39" stroke-width="1" />
+    <!-- Stylized Leaf Path -->
+    <path d="M 0 -26 C 22 -14 26 14 0 26 C -26 14 -22 -14 0 -26 Z" fill="none" stroke="#00FF9D" stroke-width="1.5" />
+    <line x1="0" y1="-26" x2="0" y2="26" stroke="#00FF9D" stroke-width="1" stroke-dasharray="3 2" />
+    <!-- Sensor node circles -->
+    <circle cx="-10" cy="-4" r="3" fill="#F59E0B" />
+    <circle cx="10" cy="6" r="3" fill="#38BDF8" />
+    <circle cx="0" cy="0" r="3" fill="#00FF9D">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Left Content Info -->
+  <g class="card-font">
+    <!-- Category & Lang Badge -->
+    <rect x="18" y="16" width="90" height="18" rx="3" fill="#042618" stroke="#10B981" stroke-width="0.8" />
+    <text x="63" y="29" fill="#00FF9D" font-size="9" font-weight="bold" text-anchor="middle">AGRI-AI TECH</text>
+
+    <rect x="114" y="16" width="70" height="18" rx="3" fill="#0A1E34" stroke="#38BDF8" stroke-width="0.8" />
+    <text x="149" y="29" fill="#38BDF8" font-size="9" font-weight="bold" text-anchor="middle">TypeScript</text>
+
+    <!-- Title -->
+    <text x="18" y="58" fill="#F1F5F9" font-size="14" font-weight="bold" letter-spacing="0.3">kisan-dost</text>
+
+    <!-- Description Lines -->
+    <text x="18" y="82" fill="#94A3B8" font-size="11">AI-powered agricultural advisor for Pakistani farmers,</text>
+    <text x="18" y="99" fill="#94A3B8" font-size="11">built with Google ADK, Gemini, FastAPI, and Next.js</text>
+    <text x="18" y="116" fill="#94A3B8" font-size="11">for crop health, mandi pricing &amp; weather alerts.</text>
+
+    <!-- Feature Tags -->
+    <rect x="18" y="134" width="70" height="18" rx="3" fill="#0A281E" />
+    <text x="53" y="146" fill="#00FF9D" font-size="9" text-anchor="middle">Google ADK</text>
+
+    <rect x="94" y="134" width="60" height="18" rx="3" fill="#0A281E" />
+    <text x="124" y="146" fill="#00FF9D" font-size="9" text-anchor="middle">Next.js</text>
+
+    <rect x="160" y="134" width="58" height="18" rx="3" fill="#0A281E" />
+    <text x="189" y="146" fill="#00FF9D" font-size="9" text-anchor="middle">FastAPI</text>
+
+    <!-- Footer Action -->
+    <line x1="18" y1="165" x2="402" y2="165" stroke="#162E24" stroke-width="1" />
+    <text x="18" y="182" fill="#10B981" font-size="10" font-weight="bold">Explore Repository ↗</text>
+    <text x="402" y="182" fill="#64748B" font-size="10" text-anchor="end">PUBLIC REPO</text>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060C1A" />
+      <stop offset="100%" stop-color="#0A162C" />
+    </linearGradient>
+    <pattern id="shieldDot" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#38BDF8" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <style>
+    .card-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace; }
+  </style>
+
+  <!-- Background Base -->
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#shieldBg)" stroke="#1F3356" stroke-width="1.2" />
+  <rect x="4" y="4" width="412" height="192" rx="8" fill="url(#shieldDot)" pointer-events="none" />
+
+  <!-- Corner Brackets -->
+  <path d="M 6 22 L 6 6 L 22 6" fill="none" stroke="#00E5FF" stroke-width="2" />
+  <path d="M 414 22 L 414 6 L 398 6" fill="none" stroke="#3B82F6" stroke-width="2" />
+
+  <!-- Visual Pic: Cryptographic Shield & Keyhole (Right Side) -->
+  <g transform="translate(345, 95)">
+    <circle cx="0" cy="0" r="38" fill="#071732" stroke="#1C3D70" stroke-width="1" />
+    <!-- Shield Outline -->
+    <path d="M 0 -24 L 20 -12 L 20 6 C 20 18 0 28 0 28 C 0 28 -20 18 -20 6 L -20 -12 Z" fill="#0A2248" stroke="#00E5FF" stroke-width="1.5" />
+    <!-- Keyhole / Lock -->
+    <circle cx="0" cy="-2" r="4.5" fill="#00FF9D" />
+    <polygon points="-2,0 2,0 4,8 -4,8" fill="#00FF9D" />
+    <circle cx="0" cy="-2" r="1.5" fill="#0A2248" />
+  </g>
+
+  <!-- Left Content Info -->
+  <g class="card-font">
+    <!-- Category & Lang Badge -->
+    <rect x="18" y="16" width="90" height="18" rx="3" fill="#072040" stroke="#00E5FF" stroke-width="0.8" />
+    <text x="63" y="29" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">PASSWORD TOOL</text>
+
+    <rect x="114" y="16" width="48" height="18" rx="3" fill="#0D223E" stroke="#60A5FA" stroke-width="0.8" />
+    <text x="138" y="29" fill="#60A5FA" font-size="9" font-weight="bold" text-anchor="middle">C++</text>
+
+    <!-- Title -->
+    <text x="18" y="58" fill="#F1F5F9" font-size="14" font-weight="bold" letter-spacing="0.3">cyber-shield</text>
+
+    <!-- Description Lines -->
+    <text x="18" y="82" fill="#94A3B8" font-size="11">Password security toolkit &amp; cryptographic defense</text>
+    <text x="18" y="99" fill="#94A3B8" font-size="11">platform engineered as an optimized C++ Data</text>
+    <text x="18" y="116" fill="#94A3B8" font-size="11">Structures &amp; Algorithms (DSA) project.</text>
+
+    <!-- Feature Tags -->
+    <rect x="18" y="134" width="70" height="18" rx="3" fill="#0E2342" />
+    <text x="53" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">C++ DSA</text>
+
+    <rect x="94" y="134" width="80" height="18" rx="3" fill="#0E2342" />
+    <text x="134" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">Hash Validation</text>
+
+    <rect x="180" y="134" width="60" height="18" rx="3" fill="#0E2342" />
+    <text x="210" y="146" fill="#38BDF8" font-size="9" text-anchor="middle">Entropy</text>
+
+    <!-- Footer Action -->
+    <line x1="18" y1="165" x2="402" y2="165" stroke="#162744" stroke-width="1" />
+    <text x="18" y="182" fill="#00E5FF" font-size="10" font-weight="bold">Explore Repository ↗</text>
+    <text x="402" y="182" fill="#64748B" font-size="10" text-anchor="end">PUBLIC REPO</text>
+  </g>
+</svg>
