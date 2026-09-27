@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- FUTURISTIC CYBER COMMAND CENTER HUD BANNER -->
-<img src="./assets/hero-banner.svg" width="100%" alt="Muhammad Abdullah Rashid — Cyber Command Center" />
+<img src="./assets/hero-banner.svg?v=2" width="100%" alt="Muhammad Abdullah Rashid — Cyber Command Center" />
 
 <br/>
 
@@ -19,7 +19,7 @@
 ### `> OPERATOR_PROFILE`
 
 <div align="center">
-  <img src="./assets/operator-profile.svg" width="100%" alt="Operator Profile Dossier Console" />
+  <img src="./assets/operator-profile.svg?v=2" width="100%" alt="Operator Profile Dossier Console" />
 </div>
 
 <br/>
@@ -32,7 +32,7 @@
 ### `> CORE_FOCUS_CONSOLE`
 
 <div align="center">
-  <img src="./assets/terminal-status.svg" width="100%" alt="JARVIS Diagnostic Console" />
+  <img src="./assets/terminal-status.svg?v=2" width="100%" alt="JARVIS Diagnostic Console" />
 </div>
 
 ---
@@ -43,7 +43,7 @@
 <summary><b>🛡️ Cybersecurity Telemetry &amp; Detection Pipeline (Click to collapse)</b></summary>
 <br/>
 <div align="center">
-  <img src="./assets/security-pipeline.svg" width="100%" alt="Cybersecurity Pipeline" />
+  <img src="./assets/security-pipeline.svg?v=2" width="100%" alt="Cybersecurity Pipeline" />
 </div>
 </details>
 
@@ -53,7 +53,7 @@
 <summary><b>🤖 Agentic AI Autonomous Reasoning Loop (Click to collapse)</b></summary>
 <br/>
 <div align="center">
-  <img src="./assets/jarvis-flow.svg" width="100%" alt="Agentic AI Architecture" />
+  <img src="./assets/jarvis-flow.svg?v=2" width="100%" alt="Agentic AI Architecture" />
 </div>
 </details>
 
@@ -65,34 +65,34 @@
   <tr>
     <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/autonomous-soc-platform">
-        <img src="./assets/projects/soc-platform.svg" width="100%" alt="Autonomous SOC Platform" />
+        <img src="./assets/projects/soc-platform.svg?v=2" width="100%" alt="Autonomous SOC Platform" />
       </a>
     </td>
     <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/-JARVIS-Autonomous-AI-Desktop-Agent-Voice-HUD">
-        <img src="./assets/projects/jarvis.svg" width="100%" alt="JARVIS AI Voice HUD" />
+        <img src="./assets/projects/jarvis.svg?v=2" width="100%" alt="JARVIS AI Voice HUD" />
       </a>
     </td>
     <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/kisan-dost">
-        <img src="./assets/projects/kisan-dost.svg" width="100%" alt="Kisan Dost AI" />
+        <img src="./assets/projects/kisan-dost.svg?v=2" width="100%" alt="Kisan Dost AI" />
       </a>
     </td>
   </tr>
   <tr>
     <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/cyber-shield">
-        <img src="./assets/projects/cyber-shield.svg" width="100%" alt="Cyber Shield Password Toolkit" />
+        <img src="./assets/projects/cyber-shield.svg?v=2" width="100%" alt="Cyber Shield Password Toolkit" />
       </a>
     </td>
     <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/BurpSuite-Pro-2026-loader">
-        <img src="./assets/projects/burpsuite.svg" width="100%" alt="Burp Suite Pro 2026 Research Toolkit" />
+        <img src="./assets/projects/burpsuite.svg?v=2" width="100%" alt="Burp Suite Pro 2026 Research Toolkit" />
       </a>
     </td>
     <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/skysecure-airline-management">
-        <img src="./assets/projects/skysecure.svg" width="100%" alt="SkySecure Airline Management System" />
+        <img src="./assets/projects/skysecure.svg?v=2" width="100%" alt="SkySecure Airline Management System" />
       </a>
     </td>
   </tr>
@@ -103,7 +103,7 @@
 ### `> TECHNICAL_ARSENAL`
 
 <div align="center">
-  <img src="./assets/technical-arsenal.svg" width="100%" alt="Animated Technical Arsenal Console" />
+  <img src="./assets/technical-arsenal.svg?v=2" width="100%" alt="Animated Technical Arsenal Console" />
 </div>
 
 ---
@@ -157,7 +157,7 @@
 
 <br/><br/>
 
-<img src="./assets/cyber-grid.svg" width="100%" alt="Cyber Grid Telemetry Footer" />
+<img src="./assets/cyber-grid.svg?v=2" width="100%" alt="Cyber Grid Telemetry Footer" />
 
 <br/>
 
