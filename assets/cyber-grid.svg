@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 130" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="gridBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#04070D" />
+      <stop offset="60%" stop-color="#080E1C" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+
+    <!-- Horizon Glow -->
+    <linearGradient id="horizonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0" />
+      <stop offset="25%" stop-color="#00E5FF" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#00FF9D" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#00E5FF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Grid Sweep Mask -->
+    <linearGradient id="gridMask" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glowH" x="-10%" y="-50%" width="120%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes gridPulse {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    @keyframes radarSweepBeam {
+      0% { transform: translateX(-400px); }
+      100% { transform: translateX(900px); }
+    }
+    .grid-pulse { animation: gridPulse 3s infinite ease-in-out; }
+    .beam { animation: radarSweepBeam 4s linear infinite; }
+    .hud-text {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Consolas, monospace;
+    }
+  </style>
+
+  <!-- Container Base -->
+  <rect x="4" y="4" width="872" height="122" rx="8" fill="url(#gridBg)" stroke="#17243B" stroke-width="1.2" />
+
+  <!-- Perspective Cyber Grid Lines -->
+  <!-- Horizon Line -->
+  <line x1="10" y1="65" x2="870" y2="65" stroke="url(#horizonGlow)" stroke-width="2" class="grid-pulse" />
+  <line x1="10" y1="65" x2="870" y2="65" stroke="#00FF9D" stroke-width="1" filter="url(#glowH)" opacity="0.6" />
+
+  <!-- Perspective Lines radiating from center horizon (x=440, y=65) -->
+  <g stroke="#00E5FF" stroke-opacity="0.25" stroke-width="1">
+    <line x1="440" y1="65" x2="20" y2="120" />
+    <line x1="440" y1="65" x2="100" y2="120" />
+    <line x1="440" y1="65" x2="190" y2="120" />
+    <line x1="440" y1="65" x2="280" y2="120" />
+    <line x1="440" y1="65" x2="360" y2="120" />
+    <line x1="440" y1="65" x2="440" y2="120" />
+    <line x1="440" y1="65" x2="520" y2="120" />
+    <line x1="440" y1="65" x2="600" y2="120" />
+    <line x1="440" y1="65" x2="690" y2="120" />
+    <line x1="440" y1="65" x2="780" y2="120" />
+    <line x1="440" y1="65" x2="860" y2="120" />
+
+    <!-- Sky Perspective Lines -->
+    <line x1="440" y1="65" x2="40" y2="10" stroke-opacity="0.12" />
+    <line x1="440" y1="65" x2="180" y2="10" stroke-opacity="0.12" />
+    <line x1="440" y1="65" x2="320" y2="10" stroke-opacity="0.12" />
+    <line x1="440" y1="65" x2="440" y2="10" stroke-opacity="0.12" />
+    <line x1="440" y1="65" x2="560" y2="10" stroke-opacity="0.12" />
+    <line x1="440" y1="65" x2="700" y2="10" stroke-opacity="0.12" />
+    <line x1="440" y1="65" x2="840" y2="10" stroke-opacity="0.12" />
+
+    <!-- Horizontal Depth Lines -->
+    <line x1="160" y1="73" x2="720" y2="73" stroke-opacity="0.2" />
+    <line x1="90" y1="84" x2="790" y2="84" stroke-opacity="0.3" />
+    <line x1="40" y1="99" x2="840" y2="99" stroke-opacity="0.4" />
+    <line x1="15" y1="116" x2="865" y2="116" stroke-opacity="0.5" />
+  </g>
+
+  <!-- Animated Radar Beam Sweep -->
+  <g class="beam" pointer-events="none">
+    <line x1="0" y1="10" x2="20" y2="120" stroke="#00FF9D" stroke-width="2" stroke-opacity="0.5" filter="url(#glowH)" />
+  </g>
+
+  <!-- Center Target Reticle -->
+  <circle cx="440" cy="65" r="16" fill="none" stroke="#00FF9D" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.8" />
+  <circle cx="440" cy="65" r="4" fill="#00FF9D" />
+
+  <!-- Top Telemetry HUD Overlay -->
+  <g class="hud-text">
+    <!-- Top Left Telemetry -->
+    <text x="24" y="24" fill="#00E5FF" font-size="10" font-weight="bold" letter-spacing="1">
+      SYS_ID: MAR-CYBER-OPS // NODE_01
+    </text>
+    <text x="24" y="38" fill="#64748B" font-size="9" letter-spacing="0.5">
+      LOC: 31.4187° N, 73.0791° E // FAISALABAD, PK
+    </text>
+
+    <!-- Top Right Telemetry -->
+    <text x="856" y="24" fill="#00FF9D" font-size="10" font-weight="bold" text-anchor="end" letter-spacing="1">
+      CLEARANCE: DEFENSIVE_RESEARCHER
+    </text>
+    <text x="856" y="38" fill="#64748B" font-size="9" text-anchor="end" letter-spacing="0.5">
+      CORE: IDS_TELEMETRY × AGENTIC_ORCHESTRATION
+    </text>
+
+    <!-- Bottom Center HUD Banner -->
+    <rect x="230" y="98" width="420" height="22" rx="3" fill="#081426" stroke="#00E5FF" stroke-width="0.8" opacity="0.95" />
+    <circle cx="245" cy="109" r="3" fill="#00FF9D" />
+    <text x="445" y="113" fill="#F1F5F9" font-size="9.5" font-weight="bold" text-anchor="middle" letter-spacing="1">
+      CYBERSECURITY ARCHITECTURE × AUTONOMOUS AGENTIC DEFENSE
+    </text>
+  </g>
+</svg>

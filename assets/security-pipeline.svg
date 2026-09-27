@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 250" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A10" />
+      <stop offset="50%" stop-color="#0B0F1A" />
+      <stop offset="100%" stop-color="#05080E" />
+    </linearGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="pipeCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E1726" />
+      <stop offset="100%" stop-color="#070D18" />
+    </linearGradient>
+
+    <!-- Glowing Rail Gradient -->
+    <linearGradient id="railGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#00FF9D" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Particle Glow Filter -->
+    <filter id="packetGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="pipeGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#00FF9D" fill-opacity="0.08" />
+    </pattern>
+
+    <marker id="pipeArrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M 0 0 L 6 3 L 0 6 Z" fill="#00FF9D" />
+    </marker>
+  </defs>
+
+  <style>
+    @keyframes pulseCardGreen {
+      0%, 100% { border-color: #1E293B; }
+      50% { filter: drop-shadow(0 0 6px rgba(0, 255, 157, 0.4)); }
+    }
+
+    @keyframes packetFlow {
+      0% { transform: translateX(0); opacity: 0; }
+      5% { opacity: 1; }
+      95% { opacity: 1; }
+      100% { transform: translateX(720px); opacity: 0; }
+    }
+
+    @keyframes dataDash {
+      to { stroke-dashoffset: -20; }
+    }
+
+    .pipeline-font {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Consolas, monospace;
+    }
+
+    .data-rail {
+      stroke-dasharray: 4 4;
+      animation: dataDash 1.2s linear infinite;
+    }
+  </style>
+
+  <!-- Base Container -->
+  <rect x="8" y="8" width="864" height="234" rx="10" fill="url(#pipeBg)" stroke="#1F293D" stroke-width="1.5" />
+  <rect x="8" y="8" width="864" height="234" fill="url(#pipeGrid)" pointer-events="none" />
+
+  <!-- Top Title Bar -->
+  <g class="pipeline-font">
+    <rect x="24" y="18" width="832" height="32" rx="4" fill="#0C1424" stroke="#1E2E48" stroke-width="1" />
+    <circle cx="38" cy="34" r="4" fill="#00FF9D">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="50" y="38" fill="#F1F5F9" font-size="12" font-weight="bold" letter-spacing="1">
+      CYBERSECURITY PIPELINE // TELEMETRY &amp; INTRUSION DETECTION SYSTEM (IDS)
+    </text>
+    <rect x="710" y="22" width="134" height="24" rx="3" fill="#072016" stroke="#00FF9D" stroke-width="0.8" />
+    <text x="777" y="38" fill="#00FF9D" font-size="10" font-weight="bold" text-anchor="middle" letter-spacing="0.5">
+      MITRE ATT&amp;CK
+    </text>
+  </g>
+
+  <!-- Backbone Telemetry Rail -->
+  <line x1="75" y1="120" x2="805" y2="120" stroke="#1E293B" stroke-width="3" />
+  <line x1="75" y1="120" x2="805" y2="120" stroke="#00FF9D" stroke-width="2" class="data-rail" stroke-opacity="0.7" />
+
+  <!-- Moving Data Packet Indicator (SMIL continuous motion) -->
+  <circle r="5" fill="#FFFFFF" filter="url(#packetGlow)">
+    <animateMotion path="M 75 120 L 805 120" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle r="9" fill="#00FF9D" opacity="0.4" filter="url(#packetGlow)">
+    <animateMotion path="M 75 120 L 805 120" dur="4s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- 6 Pipeline Stage Cards -->
+  <g class="pipeline-font">
+    <!-- STAGE 1: NETWORK TRAFFIC -->
+    <g transform="translate(24, 68)">
+      <rect x="0" y="0" width="122" height="105" rx="6" fill="url(#pipeCardBg)" stroke="#00E5FF" stroke-width="1.2" />
+      <rect x="8" y="8" width="40" height="14" rx="2" fill="#082030" />
+      <text x="28" y="19" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">01 // IN</text>
+      <text x="8" y="40" fill="#F1F5F9" font-size="10" font-weight="bold">NETWORK</text>
+      <text x="8" y="54" fill="#00E5FF" font-size="10" font-weight="bold">TRAFFIC</text>
+      <line x1="8" y1="63" x2="114" y2="63" stroke="#1E293B" stroke-width="1" />
+      <text x="8" y="78" fill="#94A3B8" font-size="8.5">Ingress flows</text>
+      <text x="8" y="92" fill="#64748B" font-size="8.5">TCP/UDP wire</text>
+    </g>
+
+    <!-- Arrow 1 -> 2 -->
+    <path d="M 148 120 L 164 120" stroke="#00FF9D" stroke-width="1.5" marker-end="url(#pipeArrow)" />
+
+    <!-- STAGE 2: PACKET CAPTURE -->
+    <g transform="translate(166, 68)">
+      <rect x="0" y="0" width="122" height="105" rx="6" fill="url(#pipeCardBg)" stroke="#1E2E48" stroke-width="1.2" />
+      <rect x="8" y="8" width="40" height="14" rx="2" fill="#0D1B2A" />
+      <text x="28" y="19" fill="#38BDF8" font-size="9" font-weight="bold" text-anchor="middle">02 // CAP</text>
+      <text x="8" y="40" fill="#F1F5F9" font-size="10" font-weight="bold">PACKET</text>
+      <text x="8" y="54" fill="#38BDF8" font-size="10" font-weight="bold">CAPTURE</text>
+      <line x1="8" y1="63" x2="114" y2="63" stroke="#1E293B" stroke-width="1" />
+      <text x="8" y="78" fill="#94A3B8" font-size="8.5">Scapy sniffer</text>
+      <text x="8" y="92" fill="#64748B" font-size="8.5">Raw sockets</text>
+    </g>
+
+    <!-- Arrow 2 -> 3 -->
+    <path d="M 290 120 L 306 120" stroke="#00FF9D" stroke-width="1.5" marker-end="url(#pipeArrow)" />
+
+    <!-- STAGE 3: ANALYSIS -->
+    <g transform="translate(308, 68)">
+      <rect x="0" y="0" width="122" height="105" rx="6" fill="url(#pipeCardBg)" stroke="#1E2E48" stroke-width="1.2" />
+      <rect x="8" y="8" width="40" height="14" rx="2" fill="#0D1B2A" />
+      <text x="28" y="19" fill="#00FF9D" font-size="9" font-weight="bold" text-anchor="middle">03 // PRC</text>
+      <text x="8" y="40" fill="#F1F5F9" font-size="10" font-weight="bold">PROTOCOL</text>
+      <text x="8" y="54" fill="#00FF9D" font-size="10" font-weight="bold">ANALYSIS</text>
+      <line x1="8" y1="63" x2="114" y2="63" stroke="#1E293B" stroke-width="1" />
+      <text x="8" y="78" fill="#94A3B8" font-size="8.5">Flow stats</text>
+      <text x="8" y="92" fill="#64748B" font-size="8.5">Header decode</text>
+    </g>
+
+    <!-- Arrow 3 -> 4 -->
+    <path d="M 432 120 L 448 120" stroke="#00FF9D" stroke-width="1.5" marker-end="url(#pipeArrow)" />
+
+    <!-- STAGE 4: THREAT DETECTION -->
+    <g transform="translate(450, 68)">
+      <rect x="0" y="0" width="122" height="105" rx="6" fill="url(#pipeCardBg)" stroke="#F59E0B" stroke-width="1.2" />
+      <rect x="8" y="8" width="40" height="14" rx="2" fill="#2E1C0A" />
+      <text x="28" y="19" fill="#F59E0B" font-size="9" font-weight="bold" text-anchor="middle">04 // DET</text>
+      <text x="8" y="40" fill="#F1F5F9" font-size="10" font-weight="bold">THREAT</text>
+      <text x="8" y="54" fill="#F59E0B" font-size="10" font-weight="bold">DETECTION</text>
+      <line x1="8" y1="63" x2="114" y2="63" stroke="#1E293B" stroke-width="1" />
+      <text x="8" y="78" fill="#94A3B8" font-size="8.5">Signatures &amp; Heur</text>
+      <text x="8" y="92" fill="#64748B" font-size="8.5">Threshold logic</text>
+    </g>
+
+    <!-- Arrow 4 -> 5 -->
+    <path d="M 574 120 L 590 120" stroke="#00FF9D" stroke-width="1.5" marker-end="url(#pipeArrow)" />
+
+    <!-- STAGE 5: ALERT -->
+    <g transform="translate(592, 68)">
+      <rect x="0" y="0" width="122" height="105" rx="6" fill="url(#pipeCardBg)" stroke="#EF4444" stroke-width="1.2" />
+      <rect x="8" y="8" width="40" height="14" rx="2" fill="#2E0A0A" />
+      <text x="28" y="19" fill="#EF4444" font-size="9" font-weight="bold" text-anchor="middle">05 // ALR</text>
+      <text x="8" y="40" fill="#F1F5F9" font-size="10" font-weight="bold">ALERT</text>
+      <text x="8" y="54" fill="#EF4444" font-size="10" font-weight="bold">DISPATCH</text>
+      <line x1="8" y1="63" x2="114" y2="63" stroke="#1E293B" stroke-width="1" />
+      <text x="8" y="78" fill="#94A3B8" font-size="8.5">Severity score</text>
+      <text x="8" y="92" fill="#64748B" font-size="8.5">Telemetry log</text>
+    </g>
+
+    <!-- Arrow 5 -> 6 -->
+    <path d="M 716 120 L 732 120" stroke="#00FF9D" stroke-width="1.5" marker-end="url(#pipeArrow)" />
+
+    <!-- STAGE 6: SOC RESPONSE -->
+    <g transform="translate(734, 68)">
+      <rect x="0" y="0" width="122" height="105" rx="6" fill="url(#pipeCardBg)" stroke="#00FF9D" stroke-width="1.2" />
+      <rect x="8" y="8" width="40" height="14" rx="2" fill="#042014" />
+      <text x="28" y="19" fill="#00FF9D" font-size="9" font-weight="bold" text-anchor="middle">06 // RES</text>
+      <text x="8" y="40" fill="#F1F5F9" font-size="10" font-weight="bold">SOC</text>
+      <text x="8" y="54" fill="#00FF9D" font-size="10" font-weight="bold">RESPONSE</text>
+      <line x1="8" y1="63" x2="114" y2="63" stroke="#1E293B" stroke-width="1" />
+      <text x="8" y="78" fill="#94A3B8" font-size="8.5">Web dashboard</text>
+      <text x="8" y="92" fill="#64748B" font-size="8.5">Incident action</text>
+    </g>
+  </g>
+
+  <!-- Bottom Telemetry Indicator -->
+  <g class="pipeline-font" transform="translate(24, 192)">
+    <rect x="0" y="0" width="832" height="34" rx="4" fill="#08101E" stroke="#17243B" stroke-width="1" />
+    <text x="16" y="21" fill="#64748B" font-size="10">PIPELINE DIRECTIVE:</text>
+    <text x="140" y="21" fill="#00E5FF" font-size="10" font-weight="bold">INGRESS WIRE</text>
+    <text x="228" y="21" fill="#64748B" font-size="10">──▶</text>
+    <text x="254" y="21" fill="#38BDF8" font-size="10" font-weight="bold">PROMISCUOUS SNIFF</text>
+    <text x="380" y="21" fill="#64748B" font-size="10">──▶</text>
+    <text x="406" y="21" fill="#F59E0B" font-size="10" font-weight="bold">ANOMALY SCORING</text>
+    <text x="526" y="21" fill="#64748B" font-size="10">──▶</text>
+    <text x="552" y="21" fill="#00FF9D" font-size="10" font-weight="bold">INCIDENT MITIGATION</text>
+    <text x="816" y="21" fill="#00FF9D" font-size="10" font-weight="bold" text-anchor="end">STATUS: ACTIVE</text>
+  </g>
+</svg>
