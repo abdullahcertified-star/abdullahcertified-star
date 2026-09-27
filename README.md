@@ -108,40 +108,9 @@ I engineer practical software to observe how threats operate at the wire and app
 
 ### `> TECHNICAL_ARSENAL`
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="33.33%" align="left">🛡️ <b>CYBERSECURITY &amp; SOC</b></th>
-      <th width="33.33%" align="left">🤖 <b>AGENTIC AI &amp; LLMS</b></th>
-      <th width="33.33%" align="left">⚙️ <b>LANGUAGES &amp; SYSTEMS</b></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td valign="top">
-        • <b>SOC &amp; SIEM</b>: Telemetry &amp; Detection<br/>
-        • <b>Intrusion Detection</b>: Scapy Sniffing<br/>
-        • <b>Threat Mapping</b>: MITRE ATT&amp;CK<br/>
-        • <b>Network Defense</b>: Wireshark &amp; Sockets<br/>
-        • <b>Auth Security</b>: JWT Tokens &amp; bcrypt
-      </td>
-      <td valign="top">
-        • <b>State Orchestration</b>: LangGraph<br/>
-        • <b>Agentic Frameworks</b>: LangChain<br/>
-        • <b>RAG Architecture</b>: Vector Retrieval<br/>
-        • <b>Tool Calling</b>: Autonomous Dispatch<br/>
-        • <b>Workflow Engine</b>: n8n Automation
-      </td>
-      <td valign="top">
-        • <b>Languages</b>: Python • C • C++ • SQL • Bash<br/>
-        • <b>Backend APIs</b>: FastAPI • Flask • REST<br/>
-        • <b>Databases</b>: SQLite • PostgreSQL<br/>
-        • <b>Operating Systems</b>: Linux • Windows<br/>
-        • <b>DevOps &amp; Tools</b>: Git • Docker
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <img src="./assets/technical-arsenal.svg" width="100%" alt="Animated Technical Arsenal Console" />
+</div>
 
 ---
 
