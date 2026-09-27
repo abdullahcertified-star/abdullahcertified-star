@@ -69,36 +69,34 @@ I engineer practical software to observe how threats operate at the wire and app
 
 <table width="100%">
   <tr>
-    <td width="50%" valign="top">
+    <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/autonomous-soc-platform">
         <img src="./assets/projects/soc-platform.svg" width="100%" alt="Autonomous SOC Platform" />
       </a>
     </td>
-    <td width="50%" valign="top">
+    <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/-JARVIS-Autonomous-AI-Desktop-Agent-Voice-HUD">
         <img src="./assets/projects/jarvis.svg" width="100%" alt="JARVIS AI Voice HUD" />
       </a>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
+    <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/kisan-dost">
         <img src="./assets/projects/kisan-dost.svg" width="100%" alt="Kisan Dost AI" />
       </a>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/cyber-shield">
         <img src="./assets/projects/cyber-shield.svg" width="100%" alt="Cyber Shield Password Toolkit" />
       </a>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
+    <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/BurpSuite-Pro-2026-loader">
         <img src="./assets/projects/burpsuite.svg" width="100%" alt="Burp Suite Pro 2026 Research Toolkit" />
       </a>
     </td>
-    <td width="50%" valign="top">
+    <td width="33.33%" valign="top">
       <a href="https://github.com/abdullahcertified-star/skysecure-airline-management">
         <img src="./assets/projects/skysecure.svg" width="100%" alt="SkySecure Airline Management System" />
       </a>
@@ -110,28 +108,67 @@ I engineer practical software to observe how threats operate at the wire and app
 
 ### `> TECHNICAL_ARSENAL`
 
-<div align="center">
-
-| Domain | Core Tooling & Technologies |
-| :--- | :--- |
-| **Languages** | `Python` • `C` • `C++` • `SQL` • `Bash` |
-| **Cybersecurity** | `SOC Monitoring` • `Intrusion Detection (IDS)` • `Scapy` • `Wireshark` • `MITRE ATT&CK` • `JWT` • `bcrypt` |
-| **Agentic AI** | `LangGraph` • `LangChain` • `RAG Pipelines` • `Autonomous Tool Calling` • `n8n Workflows` • `LLM APIs` |
-| **Backend & Infra** | `FastAPI` • `Flask` • `REST APIs` • `SQLite` • `PostgreSQL` • `Linux` • `Docker` • `Git` |
-
-</div>
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="33.33%" align="left">🛡️ <b>CYBERSECURITY &amp; SOC</b></th>
+      <th width="33.33%" align="left">🤖 <b>AGENTIC AI &amp; LLMS</b></th>
+      <th width="33.33%" align="left">⚙️ <b>LANGUAGES &amp; SYSTEMS</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top">
+        • <b>SOC &amp; SIEM</b>: Telemetry &amp; Detection<br/>
+        • <b>Intrusion Detection</b>: Scapy Sniffing<br/>
+        • <b>Threat Mapping</b>: MITRE ATT&amp;CK<br/>
+        • <b>Network Defense</b>: Wireshark &amp; Sockets<br/>
+        • <b>Auth Security</b>: JWT Tokens &amp; bcrypt
+      </td>
+      <td valign="top">
+        • <b>State Orchestration</b>: LangGraph<br/>
+        • <b>Agentic Frameworks</b>: LangChain<br/>
+        • <b>RAG Architecture</b>: Vector Retrieval<br/>
+        • <b>Tool Calling</b>: Autonomous Dispatch<br/>
+        • <b>Workflow Engine</b>: n8n Automation
+      </td>
+      <td valign="top">
+        • <b>Languages</b>: Python • C • C++ • SQL • Bash<br/>
+        • <b>Backend APIs</b>: FastAPI • Flask • REST<br/>
+        • <b>Databases</b>: SQLite • PostgreSQL<br/>
+        • <b>Operating Systems</b>: Linux • Windows<br/>
+        • <b>DevOps &amp; Tools</b>: Git • Docker
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ### `> CURRENT_LEARNING_FOCUS`
 
-```text
-CYBERSECURITY       ███████████████░░  [ Threat Detection • SOC Telemetry • Network Defense ]
-PYTHON              ████████████████░  [ Advanced Internals • Tooling • Secure Backends ]
-AGENTIC AI          █████████████░░░░  [ LangGraph State Loops • RAG • Autonomous Reasoning ]
-NETWORKING          ████████████░░░░░  [ TCP/IP Protocol Analysis • Packet Dissection ]
-SECURITY RESEARCH   ██████████░░░░░░░  [ Vulnerability Discovery • Hardened Architectures ]
-```
+<table width="100%">
+  <tr>
+    <td width="28%"><b>CYBERSECURITY</b></td>
+    <td width="72%"><code>███████████████░░</code> &nbsp; <i>[Threat Detection • SOC Telemetry • Network Defense]</i></td>
+  </tr>
+  <tr>
+    <td><b>PYTHON</b></td>
+    <td><code>████████████████░</code> &nbsp; <i>[Advanced Internals • Tooling • Secure Backends]</i></td>
+  </tr>
+  <tr>
+    <td><b>AGENTIC AI</b></td>
+    <td><code>█████████████░░░░</code> &nbsp; <i>[LangGraph State Loops • RAG • Autonomous Reasoning]</i></td>
+  </tr>
+  <tr>
+    <td><b>NETWORKING</b></td>
+    <td><code>████████████░░░░░</code> &nbsp; <i>[TCP/IP Protocol Analysis • Packet Dissection]</i></td>
+  </tr>
+  <tr>
+    <td><b>SECURITY RESEARCH</b></td>
+    <td><code>██████████░░░░░░░</code> &nbsp; <i>[Vulnerability Discovery • Hardened Architectures]</i></td>
+  </tr>
+</table>
 
 ---
 
