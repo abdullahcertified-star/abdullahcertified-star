@@ -1,22 +1,15 @@
 <div align="center">
 
-<!-- COMMAND CENTER HERO -->
-<img src="./assets/terminal-boot.svg" width="100%" alt="System Boot Terminal" />
+<!-- FUTURISTIC CYBER COMMAND CENTER HUD BANNER -->
+<img src="./assets/hero-banner.svg" width="100%" alt="Muhammad Abdullah Rashid — Cyber Command Center" />
 
 <br/>
 
-# MUHAMMAD ABDULLAH RASHID
-**Cybersecurity Student & Aspiring Security Researcher • Agentic AI Builder**  
-*The University of Faisalabad (2024–2028) • Pakistan*
-
 <p align="center">
-  <a href="https://github.com/abdullahcertified-star"><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-00FF9D?style=flat-square&labelColor=0D1117" alt="Status" /></a>
-  <img src="https://img.shields.io/badge/DEGREE-BS_CYBER_SECURITY-00E5FF?style=flat-square&labelColor=0D1117" alt="Degree" />
-  <img src="https://img.shields.io/badge/FOCUS-SOC_%2F_IDS_%E2%80%A2_AGENTIC_AI-A855F7?style=flat-square&labelColor=0D1117" alt="Focus" />
-</p>
-
-<p align="center">
-  <b>Building practical systems that detect • analyze • automate • defend</b>
+  <a href="https://github.com/abdullahcertified-star"><img src="https://img.shields.io/badge/STATUS-OPERATIONAL-00FF9D?style=for-the-badge&logoColor=black&labelColor=0B0F19" alt="Status" /></a>
+  <a href="https://www.linkedin.com/in/muhammad-abdullah-rashid-209a3524b/"><img src="https://img.shields.io/badge/LINKEDIN-CONNECT-00E5FF?style=for-the-badge&logo=linkedin&logoColor=black&labelColor=0B0F19" alt="LinkedIn" /></a>
+  <a href="https://tryhackme.com/p/abdullah.certified"><img src="https://img.shields.io/badge/TRYHACKME-SECURITY_LABS-EF4444?style=for-the-badge&logo=tryhackme&logoColor=white&labelColor=0B0F19" alt="TryHackMe" /></a>
+  <a href="mailto:abdullah.certified@gmail.com"><img src="https://img.shields.io/badge/EMAIL-DIRECT_COMMS-FFB703?style=for-the-badge&logo=gmail&logoColor=black&labelColor=0B0F19" alt="Email" /></a>
 </p>
 
 </div>
