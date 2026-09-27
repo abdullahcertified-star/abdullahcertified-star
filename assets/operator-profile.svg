@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="opBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050A14" />
+      <stop offset="50%" stop-color="#081222" />
+      <stop offset="100%" stop-color="#040810" />
+    </linearGradient>
+
+    <!-- Glowing Border -->
+    <linearGradient id="opBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#00FF9D" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="opGridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#38BDF8" fill-opacity="0.1" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="opGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes opLedPulse {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 5px #00FF9D); }
+      50% { opacity: 0.35; filter: drop-shadow(0 0 1px #00FF9D); }
+    }
+    @keyframes opLaserSweep {
+      0% { transform: translateY(0); opacity: 0.3; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(250px); opacity: 0.2; }
+    }
+    @keyframes opBorderPulse {
+      0%, 100% { stroke-opacity: 0.6; }
+      50% { stroke-opacity: 1; filter: drop-shadow(0 0 4px rgba(0, 229, 255, 0.4)); }
+    }
+
+    .op-pulse { animation: opLedPulse 2s infinite ease-in-out; }
+    .op-laser { animation: opLaserSweep 4.5s linear infinite; }
+    .op-border { animation: opBorderPulse 3s infinite ease-in-out; }
+
+    .op-font {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace;
+    }
+    .op-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Consolas, monospace;
+    }
+  </style>
+
+  <!-- Container Base -->
+  <rect x="6" y="6" width="948" height="258" rx="8" fill="url(#opBgGrad)" stroke="#162D4A" stroke-width="1.4" class="op-border" />
+  <rect x="6" y="6" width="948" height="258" rx="8" fill="url(#opGridPattern)" pointer-events="none" />
+
+  <!-- Chamfered Corner Cyber Brackets -->
+  <polygon points="6,6 24,6 6,24" fill="#00E5FF" />
+  <polygon points="954,6 936,6 954,24" fill="#00FF9D" />
+  <polygon points="6,264 24,264 6,246" fill="#00FF9D" />
+  <polygon points="954,264 936,264 954,246" fill="#00E5FF" />
+
+  <!-- Scanning Laser Beam -->
+  <g class="op-laser" pointer-events="none">
+    <line x1="8" y1="8" x2="952" y2="8" stroke="#00FF9D" stroke-width="1.2" stroke-opacity="0.3" filter="url(#opGlow)" />
+  </g>
+
+  <!-- Header Bar -->
+  <g class="op-mono">
+    <rect x="18" y="16" width="924" height="32" rx="4" fill="#07182C" stroke="#123258" stroke-width="1" />
+    <circle cx="34" cy="32" r="4.5" fill="#00FF9D" class="op-pulse" />
+    <text x="48" y="36" fill="#F1F5F9" font-size="12" font-weight="bold" letter-spacing="1">
+      OPERATOR_DOSSIER // IDENTITY, ACTIVE APPOINTMENTS &amp; CORE DIRECTIVES
+    </text>
+    <!-- Right Badge -->
+    <rect x="620" y="21" width="310" height="22" rx="3" fill="#042016" stroke="#00FF9D" stroke-width="0.8" />
+    <text x="775" y="35" fill="#00FF9D" font-size="9.5" font-weight="bold" text-anchor="middle" letter-spacing="0.5">
+      ROLE: CYBERSECURITY ANALYST @ INVICTUS SOLUTIONS
+    </text>
+  </g>
+
+  <!-- ==================== LEFT COLUMN: PERSONNEL & ACADEMIC SPECS ==================== -->
+  <g transform="translate(24, 62)" class="op-font">
+    <rect x="0" y="0" width="370" height="152" rx="6" fill="#071424" stroke="#142B48" stroke-width="1" />
+
+    <!-- Spec 1: Identity & Current Role -->
+    <g transform="translate(14, 22)">
+      <text x="0" y="0" fill="#00E5FF" font-size="9.5" font-weight="bold" class="op-mono">NAME &amp; TITLE</text>
+      <text x="0" y="15" fill="#F1F5F9" font-size="11.5" font-weight="bold">Muhammad Abdullah Rashid</text>
+      <text x="0" y="29" fill="#00FF9D" font-size="10">Cybersecurity Analyst &amp; ISO 27001:2022 Intern</text>
+    </g>
+
+    <!-- Spec 2: Academics -->
+    <g transform="translate(14, 76)">
+      <text x="0" y="0" fill="#00E5FF" font-size="9.5" font-weight="bold" class="op-mono">ACADEMICS &amp; INSTITUTION</text>
+      <text x="0" y="15" fill="#F1F5F9" font-size="11" font-weight="bold">BS Cyber Security (2024–2028)</text>
+      <text x="0" y="29" fill="#94A3B8" font-size="10">The University of Faisalabad (TUF) • Pakistan</text>
+    </g>
+
+    <!-- Spec 3: Research & Security Labs -->
+    <g transform="translate(14, 128)">
+      <text x="0" y="0" fill="#00E5FF" font-size="9.5" font-weight="bold" class="op-mono">ACTIVE RESEARCH</text>
+      <text x="0" y="14" fill="#94A3B8" font-size="10">Reverse Eng (Ghidra, x64dbg) • Pen-Testing (Kali, Burp)</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT COLUMN: 3 CORE ENGINEERING PILLARS ==================== -->
+  <g transform="translate(408, 62)" class="op-font">
+    <rect x="0" y="0" width="534" height="152" rx="6" fill="#071424" stroke="#142B48" stroke-width="1" />
+
+    <!-- Pillar 1: Defensive Systems & SOC -->
+    <g transform="translate(14, 20)">
+      <circle cx="6" cy="-2" r="3" fill="#00FF9D" />
+      <text x="16" y="0" fill="#00FF9D" font-size="11.5" font-weight="bold">Defensive Systems &amp; Threat Ingestion</text>
+      <text x="16" y="15" fill="#E2E8F0" font-size="10.5">
+        Architect of 99-file enterprise XDR platform; multi-threaded Scapy/Npcap packet sniffing;
+      </text>
+      <text x="16" y="28" fill="#94A3B8" font-size="10">
+        MITRE ATT&amp;CK heuristics, Shannon entropy scoring &amp; automated OS firewall mitigation.
+      </text>
+    </g>
+
+    <!-- Pillar 2: Agentic AI & Cognitive Loops -->
+    <g transform="translate(14, 68)">
+      <circle cx="6" cy="-2" r="3" fill="#A855F7" />
+      <text x="16" y="0" fill="#C084FC" font-size="11.5" font-weight="bold">Agentic Engineering &amp; AI Automation</text>
+      <text x="16" y="15" fill="#E2E8F0" font-size="10.5">
+        Stateful decision graphs (LangGraph), Google Gemini voice HUD with floating 3D WebGL,
+      </text>
+      <text x="16" y="28" fill="#94A3B8" font-size="10">
+        dynamic tool-calling pipelines, vector RAG retrieval, and n8n autonomous webhook triggers.
+      </text>
+    </g>
+
+    <!-- Pillar 3: Systems, DSA & Secure Auth -->
+    <g transform="translate(14, 116)">
+      <circle cx="6" cy="-2" r="3" fill="#38BDF8" />
+      <text x="16" y="0" fill="#38BDF8" font-size="11.5" font-weight="bold">Core Systems, DSA &amp; Cryptography</text>
+      <text x="16" y="15" fill="#E2E8F0" font-size="10.5">
+        C++17 algorithmic security tools (Levenshtein distance, KMP pattern matching, graph walk);
+      </text>
+      <text x="16" y="28" fill="#94A3B8" font-size="10">
+        relational schemas on MS SQL Server (T-SQL); salted password hashing &amp; RBAC matrices.
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM STATUS BAR ==================== -->
+  <g class="op-mono" transform="translate(24, 222)">
+    <rect x="0" y="0" width="918" height="24" rx="3" fill="#061220" stroke="#122A44" stroke-width="0.8" />
+    <text x="12" y="15" fill="#00E5FF" font-size="9.5" font-weight="bold">ISMS COMPLIANCE: ISO 27001:2022</text>
+    <text x="250" y="15" fill="#64748B" font-size="9.5">|</text>
+    <text x="270" y="15" fill="#F1F5F9" font-size="9.5">CORE STACK: PYTHON • C++17 • SQL SERVER • LINUX • SCAPY • LANGGRAPH</text>
+    <text x="906" y="15" fill="#00FF9D" font-size="9.5" font-weight="bold" text-anchor="end">STATUS: OPEN FOR ROLES</text>
+  </g>
+</svg>

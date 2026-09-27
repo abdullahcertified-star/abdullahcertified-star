@@ -18,13 +18,14 @@
 
 ### `> OPERATOR_PROFILE`
 
-Cybersecurity undergraduate focused on the intersection of **network defense, telemetry-driven intrusion detection, and autonomous Agentic AI**. 
+<div align="center">
+  <img src="./assets/operator-profile.svg" width="100%" alt="Operator Profile Dossier Console" />
+</div>
 
-I engineer practical software to observe how threats operate at the wire and application layers—and develop stateful agent loops that automate observation, heuristic analysis, and incident containment.
+<br/>
 
-* 🛡️ **Defensive Systems**: SOC telemetry ingestion, raw packet sniffing (`Scapy`), MITRE ATT&CK heuristics, and hardened auth (`JWT`/`bcrypt`).
-* 🤖 **Agentic Engineering**: Stateful multi-step reasoning graphs (`LangGraph`), dynamic tool calling, RAG pipelines, and automated execution (`n8n`).
-* ⚙️ **Core Tooling**: Production-grade `Python`, hardened `FastAPI`/`Flask` services, relational schemas (`SQL`), and containerized `Linux` environments.
+> **Cybersecurity Analyst &amp; ISO 27001:2022 Implementation Intern** at **Invictus Solutions**, specializing in real-time SOC operations, multi-threaded packet capture (`Scapy`/`Npcap`), and autonomous Agentic AI (`LangGraph`/`Gemini`). Architect of enterprise-scale intrusion detection platforms and C++ algorithmic security toolkits.
+
 
 ---
 
