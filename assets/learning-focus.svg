@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="lfBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050A14" />
+      <stop offset="50%" stop-color="#081220" />
+      <stop offset="100%" stop-color="#040810" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="lfRowBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#081524" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#050D18" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glowing Progress Bar Gradients -->
+    <linearGradient id="gradCyber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C853" />
+      <stop offset="50%" stop-color="#00FF9D" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+
+    <linearGradient id="gradPython" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="gradAI" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="50%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="gradNetwork" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0369A1" />
+      <stop offset="60%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="gradResearch" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="50%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <!-- Animated Shimmer Gradient for Bars -->
+    <linearGradient id="shimmerOverlay" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+      <animate attributeName="x1" from="-100%" to="200%" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="300%" dur="3s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="lfGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#38BDF8" fill-opacity="0.08" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="lfGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes lfPulseLed {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 5px #00FF9D); }
+      50% { opacity: 0.35; filter: drop-shadow(0 0 1px #00FF9D); }
+    }
+    @keyframes lfLaserSweep {
+      0% { transform: translateY(0); opacity: 0.3; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(270px); opacity: 0.2; }
+    }
+    @keyframes lfBorderPulse {
+      0%, 100% { stroke-opacity: 0.6; }
+      50% { stroke-opacity: 1; filter: drop-shadow(0 0 4px rgba(0, 229, 255, 0.4)); }
+    }
+    @keyframes lfBarGlow {
+      0%, 100% { filter: drop-shadow(0 0 2px rgba(0, 255, 157, 0.3)); }
+      50% { filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.6)); }
+    }
+
+    .lf-pulse { animation: lfPulseLed 2s infinite ease-in-out; }
+    .lf-laser { animation: lfLaserSweep 4.5s linear infinite; }
+    .lf-border { animation: lfBorderPulse 3s infinite ease-in-out; }
+    .lf-barglow { animation: lfBarGlow 3s infinite ease-in-out; }
+
+    .lf-font {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace;
+    }
+    .lf-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Consolas, monospace;
+    }
+  </style>
+
+  <!-- Container Base -->
+  <rect x="6" y="6" width="948" height="278" rx="8" fill="url(#lfBgGrad)" stroke="#162D4A" stroke-width="1.4" class="lf-border" />
+  <rect x="6" y="6" width="948" height="278" rx="8" fill="url(#lfGrid)" pointer-events="none" />
+
+  <!-- Chamfered Corner Cyber Brackets -->
+  <polygon points="6,6 24,6 6,24" fill="#00E5FF" />
+  <polygon points="954,6 936,6 954,24" fill="#00FF9D" />
+  <polygon points="6,284 24,284 6,266" fill="#00FF9D" />
+  <polygon points="954,284 936,284 954,266" fill="#00E5FF" />
+
+  <!-- Scanning Laser Beam -->
+  <g class="lf-laser" pointer-events="none">
+    <line x1="8" y1="8" x2="952" y2="8" stroke="#00FF9D" stroke-width="1.2" stroke-opacity="0.3" filter="url(#lfGlow)" />
+  </g>
+
+  <!-- Header Bar -->
+  <g class="lf-mono">
+    <rect x="18" y="16" width="924" height="32" rx="4" fill="#07182C" stroke="#123258" stroke-width="1" />
+    <circle cx="34" cy="32" r="4.5" fill="#00FF9D" class="lf-pulse" />
+    <text x="48" y="36" fill="#F1F5F9" font-size="12" font-weight="bold" letter-spacing="1">
+      TELEMETRY // CONTINUOUS LEARNING CURRICULUM &amp; ACTIVE MASTERY SPRINTS
+    </text>
+    <!-- Right Badge -->
+    <rect x="654" y="21" width="276" height="22" rx="3" fill="#042016" stroke="#00FF9D" stroke-width="0.8" />
+    <text x="792" y="35" fill="#00FF9D" font-size="9.5" font-weight="bold" text-anchor="middle" letter-spacing="0.5">
+      MASTERY INDEX: 83.2% • ACTIVE SPRINTS
+    </text>
+  </g>
+
+  <!-- ==================== TRACK 1: CYBERSECURITY ==================== -->
+  <g transform="translate(18, 56)">
+    <!-- Row background card -->
+    <rect x="0" y="0" width="924" height="34" rx="4" fill="url(#lfRowBg)" stroke="#112940" stroke-width="0.8" />
+    
+    <!-- Category Label & Scope -->
+    <text x="14" y="16" fill="#00FF9D" font-size="10.5" font-weight="bold" class="lf-mono">CYBERSECURITY</text>
+    <text x="14" y="28" fill="#64748B" font-size="8.5" class="lf-font">Threat Detection • SOC Telemetry Heuristics • Npcap</text>
+
+    <!-- Progress Slot Track -->
+    <rect x="270" y="11" width="450" height="12" rx="3" fill="#071320" stroke="#13364C" stroke-width="0.8" />
+    <!-- Segment markers (25%, 50%, 75%) -->
+    <line x1="382.5" y1="11" x2="382.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="495" y1="11" x2="495" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="607.5" y1="11" x2="607.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+
+    <!-- Fill Bar (90% = 405px) -->
+    <rect x="272" y="13" width="405" height="8" rx="2" fill="url(#gradCyber)" />
+    <!-- Animated Shimmer Sweep -->
+    <rect x="272" y="13" width="405" height="8" rx="2" fill="url(#shimmerOverlay)" pointer-events="none" />
+
+    <!-- Percent Badge -->
+    <rect x="730" y="8" width="46" height="18" rx="3" fill="#042016" stroke="#00FF9D" stroke-width="0.8" />
+    <text x="753" y="20.5" fill="#00FF9D" font-size="9.5" font-weight="bold" text-anchor="middle" class="lf-mono">90%</text>
+
+    <!-- Status Tag -->
+    <rect x="786" y="8" width="126" height="18" rx="3" fill="#061826" stroke="#12344A" stroke-width="0.8" />
+    <text x="849" y="20.5" fill="#A7F3D0" font-size="8.5" font-weight="bold" text-anchor="middle" class="lf-mono">ADVANCED • SOC LEAD</text>
+  </g>
+
+  <!-- ==================== TRACK 2: PYTHON & SYSTEMS ==================== -->
+  <g transform="translate(18, 95)">
+    <!-- Row background card -->
+    <rect x="0" y="0" width="924" height="34" rx="4" fill="url(#lfRowBg)" stroke="#112940" stroke-width="0.8" />
+    
+    <!-- Category Label & Scope -->
+    <text x="14" y="16" fill="#00E5FF" font-size="10.5" font-weight="bold" class="lf-mono">PYTHON INTERNALS</text>
+    <text x="14" y="28" fill="#64748B" font-size="8.5" class="lf-font">Advanced Internals • Async Runtimes • Tooling &amp; C++</text>
+
+    <!-- Progress Slot Track -->
+    <rect x="270" y="11" width="450" height="12" rx="3" fill="#071320" stroke="#13364C" stroke-width="0.8" />
+    <!-- Segment markers -->
+    <line x1="382.5" y1="11" x2="382.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="495" y1="11" x2="495" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="607.5" y1="11" x2="607.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+
+    <!-- Fill Bar (95% = 427px) -->
+    <rect x="272" y="13" width="427" height="8" rx="2" fill="url(#gradPython)" />
+    <rect x="272" y="13" width="427" height="8" rx="2" fill="url(#shimmerOverlay)" pointer-events="none" />
+
+    <!-- Percent Badge -->
+    <rect x="730" y="8" width="46" height="18" rx="3" fill="#031F2E" stroke="#00E5FF" stroke-width="0.8" />
+    <text x="753" y="20.5" fill="#00E5FF" font-size="9.5" font-weight="bold" text-anchor="middle" class="lf-mono">95%</text>
+
+    <!-- Status Tag -->
+    <rect x="786" y="8" width="126" height="18" rx="3" fill="#061826" stroke="#12344A" stroke-width="0.8" />
+    <text x="849" y="20.5" fill="#BAE6FD" font-size="8.5" font-weight="bold" text-anchor="middle" class="lf-mono">CORE • PRODUCTION</text>
+  </g>
+
+  <!-- ==================== TRACK 3: AGENTIC AI ==================== -->
+  <g transform="translate(18, 134)">
+    <!-- Row background card -->
+    <rect x="0" y="0" width="924" height="34" rx="4" fill="url(#lfRowBg)" stroke="#112940" stroke-width="0.8" />
+    
+    <!-- Category Label & Scope -->
+    <text x="14" y="16" fill="#C084FC" font-size="10.5" font-weight="bold" class="lf-mono">AGENTIC AI</text>
+    <text x="14" y="28" fill="#64748B" font-size="8.5" class="lf-font">LangGraph State Loops • Vector RAG • Autonomous Reasoning</text>
+
+    <!-- Progress Slot Track -->
+    <rect x="270" y="11" width="450" height="12" rx="3" fill="#071320" stroke="#13364C" stroke-width="0.8" />
+    <!-- Segment markers -->
+    <line x1="382.5" y1="11" x2="382.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="495" y1="11" x2="495" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="607.5" y1="11" x2="607.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+
+    <!-- Fill Bar (82% = 369px) -->
+    <rect x="272" y="13" width="369" height="8" rx="2" fill="url(#gradAI)" />
+    <rect x="272" y="13" width="369" height="8" rx="2" fill="url(#shimmerOverlay)" pointer-events="none" />
+
+    <!-- Percent Badge -->
+    <rect x="730" y="8" width="46" height="18" rx="3" fill="#1C0E2D" stroke="#C084FC" stroke-width="0.8" />
+    <text x="753" y="20.5" fill="#C084FC" font-size="9.5" font-weight="bold" text-anchor="middle" class="lf-mono">82%</text>
+
+    <!-- Status Tag -->
+    <rect x="786" y="8" width="126" height="18" rx="3" fill="#061826" stroke="#12344A" stroke-width="0.8" />
+    <text x="849" y="20.5" fill="#E9D5FF" font-size="8.5" font-weight="bold" text-anchor="middle" class="lf-mono">ACTIVE ARCHITECTURE</text>
+  </g>
+
+  <!-- ==================== TRACK 4: NETWORKING ==================== -->
+  <g transform="translate(18, 173)">
+    <!-- Row background card -->
+    <rect x="0" y="0" width="924" height="34" rx="4" fill="url(#lfRowBg)" stroke="#112940" stroke-width="0.8" />
+    
+    <!-- Category Label & Scope -->
+    <text x="14" y="16" fill="#38BDF8" font-size="10.5" font-weight="bold" class="lf-mono">NETWORKING &amp; PCAP</text>
+    <text x="14" y="28" fill="#64748B" font-size="8.5" class="lf-font">TCP/IP Protocol Dissection • Shannon Entropy • Scapy</text>
+
+    <!-- Progress Slot Track -->
+    <rect x="270" y="11" width="450" height="12" rx="3" fill="#071320" stroke="#13364C" stroke-width="0.8" />
+    <!-- Segment markers -->
+    <line x1="382.5" y1="11" x2="382.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="495" y1="11" x2="495" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="607.5" y1="11" x2="607.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+
+    <!-- Fill Bar (75% = 337px) -->
+    <rect x="272" y="13" width="337" height="8" rx="2" fill="url(#gradNetwork)" />
+    <rect x="272" y="13" width="337" height="8" rx="2" fill="url(#shimmerOverlay)" pointer-events="none" />
+
+    <!-- Percent Badge -->
+    <rect x="730" y="8" width="46" height="18" rx="3" fill="#061B2E" stroke="#38BDF8" stroke-width="0.8" />
+    <text x="753" y="20.5" fill="#38BDF8" font-size="9.5" font-weight="bold" text-anchor="middle" class="lf-mono">75%</text>
+
+    <!-- Status Tag -->
+    <rect x="786" y="8" width="126" height="18" rx="3" fill="#061826" stroke="#12344A" stroke-width="0.8" />
+    <text x="849" y="20.5" fill="#BAE6FD" font-size="8.5" font-weight="bold" text-anchor="middle" class="lf-mono">HEURISTIC PIPELINES</text>
+  </g>
+
+  <!-- ==================== TRACK 5: SECURITY RESEARCH ==================== -->
+  <g transform="translate(18, 212)">
+    <!-- Row background card -->
+    <rect x="0" y="0" width="924" height="34" rx="4" fill="url(#lfRowBg)" stroke="#112940" stroke-width="0.8" />
+    
+    <!-- Category Label & Scope -->
+    <text x="14" y="16" fill="#F59E0B" font-size="10.5" font-weight="bold" class="lf-mono">SECURITY RESEARCH</text>
+    <text x="14" y="28" fill="#64748B" font-size="8.5" class="lf-font">Reverse Eng (Ghidra, x64dbg) • Burp Automation • Labs</text>
+
+    <!-- Progress Slot Track -->
+    <rect x="270" y="11" width="450" height="12" rx="3" fill="#071320" stroke="#13364C" stroke-width="0.8" />
+    <!-- Segment markers -->
+    <line x1="382.5" y1="11" x2="382.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="495" y1="11" x2="495" y2="23" stroke="#162D4A" stroke-width="0.8" />
+    <line x1="607.5" y1="11" x2="607.5" y2="23" stroke="#162D4A" stroke-width="0.8" />
+
+    <!-- Fill Bar (65% = 292px) -->
+    <rect x="272" y="13" width="292" height="8" rx="2" fill="url(#gradResearch)" />
+    <rect x="272" y="13" width="292" height="8" rx="2" fill="url(#shimmerOverlay)" pointer-events="none" />
+
+    <!-- Percent Badge -->
+    <rect x="730" y="8" width="46" height="18" rx="3" fill="#291207" stroke="#F59E0B" stroke-width="0.8" />
+    <text x="753" y="20.5" fill="#F59E0B" font-size="9.5" font-weight="bold" text-anchor="middle" class="lf-mono">65%</text>
+
+    <!-- Status Tag -->
+    <rect x="786" y="8" width="126" height="18" rx="3" fill="#061826" stroke="#12344A" stroke-width="0.8" />
+    <text x="849" y="20.5" fill="#FDE68A" font-size="8.5" font-weight="bold" text-anchor="middle" class="lf-mono">LAB EXPERIMENTS</text>
+  </g>
+
+  <!-- ==================== BOTTOM STATUS BAR ==================== -->
+  <g class="lf-mono" transform="translate(18, 254)">
+    <rect x="0" y="0" width="924" height="22" rx="3" fill="#061220" stroke="#122A44" stroke-width="0.8" />
+    <text x="12" y="14.5" fill="#00E5FF" font-size="9" font-weight="bold">PIPELINE: CONTINUOUS STUDY &amp; FIELD PRACTICE</text>
+    <text x="325" y="14.5" fill="#64748B" font-size="9">|</text>
+    <text x="345" y="14.5" fill="#F1F5F9" font-size="9">TARGET: OFFENSIVE/DEFENSIVE SECURITY ARCHITECT</text>
+    <text x="912" y="14.5" fill="#00FF9D" font-size="9" font-weight="bold" text-anchor="end">STATUS: ACCELERATING</text>
+  </g>
+</svg>

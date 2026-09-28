@@ -22,11 +22,6 @@
   <img src="./assets/operator-profile.svg?v=3" width="100%" alt="Operator Profile Dossier Console" />
 </div>
 
-<br/>
-
-> **Cybersecurity Analyst &amp; ISO 27001:2022 Implementation Intern** at **Invictus Solutions**, specializing in real-time SOC operations, multi-threaded packet capture (`Scapy`/`Npcap`), and autonomous Agentic AI (`LangGraph`/`Gemini`). Architect of enterprise-scale intrusion detection platforms and C++ algorithmic security toolkits.
-
-
 ---
 
 ### `> CORE_FOCUS_CONSOLE`
@@ -110,28 +105,9 @@
 
 ### `> CURRENT_LEARNING_FOCUS`
 
-<table width="100%">
-  <tr>
-    <td width="28%"><b>CYBERSECURITY</b></td>
-    <td width="72%"><code>███████████████░░</code> &nbsp; <i>[Threat Detection • SOC Telemetry • Network Defense]</i></td>
-  </tr>
-  <tr>
-    <td><b>PYTHON</b></td>
-    <td><code>████████████████░</code> &nbsp; <i>[Advanced Internals • Tooling • Secure Backends]</i></td>
-  </tr>
-  <tr>
-    <td><b>AGENTIC AI</b></td>
-    <td><code>█████████████░░░░</code> &nbsp; <i>[LangGraph State Loops • RAG • Autonomous Reasoning]</i></td>
-  </tr>
-  <tr>
-    <td><b>NETWORKING</b></td>
-    <td><code>████████████░░░░░</code> &nbsp; <i>[TCP/IP Protocol Analysis • Packet Dissection]</i></td>
-  </tr>
-  <tr>
-    <td><b>SECURITY RESEARCH</b></td>
-    <td><code>██████████░░░░░░░</code> &nbsp; <i>[Vulnerability Discovery • Hardened Architectures]</i></td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/learning-focus.svg?v=1" width="100%" alt="Continuous Learning Curriculum &amp; Active Mastery Sprints HUD" />
+</div>
 
 ---
 
