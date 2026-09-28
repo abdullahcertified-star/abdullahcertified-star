@@ -19,7 +19,7 @@
 ### `> OPERATOR_PROFILE`
 
 <div align="center">
-  <img src="./assets/operator-profile.svg?v=2" width="100%" alt="Operator Profile Dossier Console" />
+  <img src="./assets/operator-profile.svg?v=3" width="100%" alt="Operator Profile Dossier Console" />
 </div>
 
 <br/>

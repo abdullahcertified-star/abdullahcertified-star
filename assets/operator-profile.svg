@@ -81,7 +81,7 @@
     <!-- Right Badge -->
     <rect x="620" y="21" width="310" height="22" rx="3" fill="#042016" stroke="#00FF9D" stroke-width="0.8" />
     <text x="775" y="35" fill="#00FF9D" font-size="9.5" font-weight="bold" text-anchor="middle" letter-spacing="0.5">
-      ROLE: CYBERSECURITY ANALYST @ INVICTUS SOLUTIONS
+      FOCUS: SOC/IDS TELEMETRY &amp; AGENTIC DEFENSE
     </text>
   </g>
 
@@ -91,9 +91,9 @@
 
     <!-- Spec 1: Identity & Current Role -->
     <g transform="translate(14, 22)">
-      <text x="0" y="0" fill="#00E5FF" font-size="9.5" font-weight="bold" class="op-mono">NAME &amp; TITLE</text>
+      <text x="0" y="0" fill="#00E5FF" font-size="9.5" font-weight="bold" class="op-mono">NAME &amp; ROLE</text>
       <text x="0" y="15" fill="#F1F5F9" font-size="11.5" font-weight="bold">Muhammad Abdullah Rashid</text>
-      <text x="0" y="29" fill="#00FF9D" font-size="10">Cybersecurity Analyst &amp; ISO 27001:2022 Intern</text>
+      <text x="0" y="29" fill="#00FF9D" font-size="10">SOC &amp; IDS Developer • Agentic AI Builder</text>
     </g>
 
     <!-- Spec 2: Academics -->
